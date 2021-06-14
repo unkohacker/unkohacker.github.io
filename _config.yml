@@ -53,3 +53,27 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+
+collections:
+  pages:
+    output: true
+
