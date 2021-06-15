@@ -1,2 +1,28 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+// _includes/youtube.html
+@media screen and (min-width: $on-medium) {
+  .youtube-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    // grid-gap: 15px;
+    justify-items: center;
+  }
+}
+
+$youtube-width: 80%;
+
+.youtube {
+  position: relative;
+  width: $youtube-width;
+  padding-top: calc(#{$youtube-width} * 9 / 16);
+  margin: 20px auto;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
