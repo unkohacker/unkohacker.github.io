@@ -1,21 +1,43 @@
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+title: Facking Blog
+author:
+  name: unkohacker
+  email: unkohacker@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://unkohacker.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+lang: ja
+
+show_excerpts: false # set to true to show excerpts on the homepage
 
 # Build settings
-theme: minima
+# theme: minima
+
 minima:
+  # Minima date format
+  # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+  date_format: "%b %-d, %Y"
+
+  # skin
   skin: dark
+
+  # generate social links in footer
+  social_links:
+    twitter: unkohacker
+    github:  unkohacker
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
