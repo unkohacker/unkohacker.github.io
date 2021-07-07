@@ -1,0 +1,2 @@
+serve:
+	foreman start
